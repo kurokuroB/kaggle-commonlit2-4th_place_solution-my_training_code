@@ -4,6 +4,7 @@ import os
 import gc
 import math
 import warnings
+from pathlib import Path
 
 from box import Box
 
@@ -31,8 +32,8 @@ warnings.filterwarnings("ignore")
 os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 
 # setting const
-OUTPUT_DIR = sys.argv[1]
-DATA_PATH = sys.argv[2]
+OUTPUT_DIR = str(Path(__file__).parents[1]) + "/data/output"
+DATA_PATH = str(Path(__file__).parents[1]) + "/data/input"
 
 # config
 config = {

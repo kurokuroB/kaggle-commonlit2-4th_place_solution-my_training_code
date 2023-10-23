@@ -36,8 +36,8 @@ You can train models when perform the following code in terminal.
 
 ```
 cd ..
-python training/238.py output input
-python training/259.py output input
+python training/238.py
+python training/259.py
 ```
 
 After training, model weights will be put into data/output folder.
