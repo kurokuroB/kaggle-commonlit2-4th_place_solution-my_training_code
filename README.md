@@ -30,7 +30,7 @@ mkdir output
 
 The necessary data is [here](https://www.kaggle.com/competitions/commonlit-evaluate-student-summaries/data)
 
-### 3. train models
+### 3. Train models
 
 You can train models when perform the following code in terminal.
 

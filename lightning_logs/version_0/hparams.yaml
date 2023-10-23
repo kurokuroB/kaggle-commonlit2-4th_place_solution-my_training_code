@@ -1,0 +1,158 @@
+epoch: 2
+gradient_checkpointing_enable: false
+max_len: 768
+model: microsoft/deberta-v3-large
+optimizer: !!python/object/new:box.box.Box
+  dictitems:
+    name: optim.AdamW
+    params: !!python/object/new:box.box.Box
+      dictitems:
+        lr: 3.0e-05
+      state:
+        _box_config:
+          __created: true
+          __safe_keys:
+            lr: lr
+          box_class: &id001 !!python/name:box.box.Box ''
+          box_dots: false
+          box_duplicates: ignore
+          box_intact_types: !!python/tuple []
+          box_namespace: !!python/tuple
+          - optimizer
+          - params
+          box_recast: null
+          box_safe_prefix: x
+          camel_killer_box: false
+          conversion_box: true
+          default_box: false
+          default_box_attr: *id001
+          default_box_create_on_get: true
+          default_box_none_transform: true
+          frozen_box: false
+          modify_tuples_box: false
+  state:
+    _box_config:
+      __created: true
+      __safe_keys:
+        name: name
+        params: params
+      box_class: *id001
+      box_dots: false
+      box_duplicates: ignore
+      box_intact_types: !!python/tuple []
+      box_namespace: !!python/tuple
+      - optimizer
+      box_recast: null
+      box_safe_prefix: x
+      camel_killer_box: false
+      conversion_box: true
+      default_box: false
+      default_box_attr: *id001
+      default_box_create_on_get: true
+      default_box_none_transform: true
+      frozen_box: false
+      modify_tuples_box: false
+params_dir: /tmp/working/kaggle/kaggle_private/nlp/kaggle-commonlit2-4th_place_solution-my_training_code/data/output
+seed: 99
+train_loader: !!python/object/new:box.box.Box
+  dictitems:
+    batch_size: 2
+    drop_last: true
+    num_workers: 4
+    pin_memory: false
+    shuffle: true
+  state:
+    _box_config:
+      __created: true
+      __safe_keys:
+        batch_size: batch_size
+        drop_last: drop_last
+        num_workers: num_workers
+        pin_memory: pin_memory
+        shuffle: shuffle
+      box_class: *id001
+      box_dots: false
+      box_duplicates: ignore
+      box_intact_types: !!python/tuple []
+      box_namespace: !!python/tuple
+      - train_loader
+      box_recast: null
+      box_safe_prefix: x
+      camel_killer_box: false
+      conversion_box: true
+      default_box: false
+      default_box_attr: *id001
+      default_box_create_on_get: true
+      default_box_none_transform: true
+      frozen_box: false
+      modify_tuples_box: false
+trainer: !!python/object/new:box.box.Box
+  dictitems:
+    accelerator: gpu
+    accumulate_grad_batches: 4
+    deterministic: false
+    devices: 1
+    fast_dev_run: false
+    num_sanity_val_steps: 0
+    precision: 16
+    val_check_interval: 0.2
+  state:
+    _box_config:
+      __created: true
+      __safe_keys:
+        accelerator: accelerator
+        accumulate_grad_batches: accumulate_grad_batches
+        deterministic: deterministic
+        devices: devices
+        fast_dev_run: fast_dev_run
+        num_sanity_val_steps: num_sanity_val_steps
+        precision: precision
+        val_check_interval: val_check_interval
+      box_class: *id001
+      box_dots: false
+      box_duplicates: ignore
+      box_intact_types: !!python/tuple []
+      box_namespace: !!python/tuple
+      - trainer
+      box_recast: null
+      box_safe_prefix: x
+      camel_killer_box: false
+      conversion_box: true
+      default_box: false
+      default_box_attr: *id001
+      default_box_create_on_get: true
+      default_box_none_transform: true
+      frozen_box: false
+      modify_tuples_box: false
+val_loader: !!python/object/new:box.box.Box
+  dictitems:
+    batch_size: 32
+    drop_last: false
+    num_workers: 8
+    pin_memory: false
+    shuffle: false
+  state:
+    _box_config:
+      __created: true
+      __safe_keys:
+        batch_size: batch_size
+        drop_last: drop_last
+        num_workers: num_workers
+        pin_memory: pin_memory
+        shuffle: shuffle
+      box_class: *id001
+      box_dots: false
+      box_duplicates: ignore
+      box_intact_types: !!python/tuple []
+      box_namespace: !!python/tuple
+      - val_loader
+      box_recast: null
+      box_safe_prefix: x
+      camel_killer_box: false
+      conversion_box: true
+      default_box: false
+      default_box_attr: *id001
+      default_box_create_on_get: true
+      default_box_none_transform: true
+      frozen_box: false
+      modify_tuples_box: false
