@@ -13,7 +13,7 @@ My training code is about model no1 and no6 in this solution.
 　 ┗ 238.py : training code for model no1(deberta-v3-large).  
 　 ┗ 259.py : training code for model no6(deberta-v3-large-squad2).
 
-## how to train
+## How to train
 
 ### 1. Perform the following code in terminal.
 
