@@ -45,3 +45,5 @@ After training, model weights will be put into data/output folder.
 - File names
   - model1.ckpt : the weight of model no1
   - model6.ckpt : the weight of model no6
+
+If there are missing libraries in your environment, please install them based on the `requirements.txt`.
